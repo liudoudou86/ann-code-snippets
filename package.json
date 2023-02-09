@@ -1,8 +1,10 @@
 {
   "name": "ann-code-snippets",
   "displayName": "Ann Code Snippets",
-  "description": "代码片段插件",
+  "description": "私有代码辅助工具",
+  "publisher": "Tesla Liu",
   "version": "0.0.1",
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -12,12 +14,12 @@
   "contributes": {
     "snippets": [
       {
-        "language": "javascript",
-        "path": "./snippets/js.code-snippets"
-      },
-      {
         "language": "python",
         "path": "./snippets/py.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/js.code-snippets"
       }
     ]
   }

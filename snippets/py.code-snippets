@@ -1,0 +1,39 @@
+{
+  "print": {
+    "prefix": "pypr",
+    "body": [
+      "print(${1})",
+    ],
+    "description": "打印调试"
+  },
+  "function": {
+    "prefix": "pydef",
+    "body": [
+      "# 定义函数",
+      "def ${1:name}():",
+      "    print(${2})",
+      "# 调用函数",
+      "name()",
+    ],
+    "description": "定义函数"
+  },
+  "ifStatement": {
+    "prefix": "pyif",
+    "body": [
+      "num = 1",
+      "if ${1:num} > 0:",
+      "    print(${2})",
+      "else:",
+      "    print(${3})",
+    ],
+    "description": "if语句"
+  },
+  "forLoop": {
+    "prefix": "pyfor",
+    "body": [
+      "for ${1:i} in range:",
+      "    print(${2})",
+    ],
+    "description": "for循环"
+  }
+}
