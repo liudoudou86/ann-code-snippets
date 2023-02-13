@@ -2,7 +2,7 @@
   "print": {
     "prefix": "pypr",
     "body": [
-      "print(${1})",
+      "print($1)",
     ],
     "description": "打印调试"
   },
@@ -11,9 +11,7 @@
     "body": [
       "# 定义函数",
       "def ${1:name}():",
-      "    print(${2})",
-      "# 调用函数",
-      "name()",
+      "    print($2)",
     ],
     "description": "定义函数"
   },
@@ -21,10 +19,10 @@
     "prefix": "pyif",
     "body": [
       "num = 1",
-      "if ${1:num} > 0:",
-      "    print(${2})",
+      "if ${1:num} > 0$2:",
+      "    print($3)",
       "else:",
-      "    print(${3})",
+      "    print($4)",
     ],
     "description": "if语句"
   },
@@ -32,7 +30,7 @@
     "prefix": "pyfor",
     "body": [
       "for ${1:i} in range:",
-      "    print(${2})",
+      "    print($2)",
     ],
     "description": "for循环"
   }
